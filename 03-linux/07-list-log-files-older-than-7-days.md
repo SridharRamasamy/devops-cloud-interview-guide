@@ -23,6 +23,11 @@ find /var/log -type f -mtime +7
   - `-7` would mean newer than 7 days.
 
 ---
+| Command                   | Explanation                                                    |
+| ------------------------- | -------------------------------------------------------------- |
+| `find /var/log -mtime +7` | Find files modified **more than 7 days ago** (Day 8, 9, 10...) |
+| `find /var/log -mtime -7` | Find files modified **in the last 7 days** (Day 1 to Day 7)    |
+| `find /var/log -mtime 7`  | Find files modified **exactly 7 days ago**                     |
 
 #### 🛠️ Practical Usage:
 If you want to **view the size and timestamp** of those files:
