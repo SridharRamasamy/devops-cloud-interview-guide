@@ -18,7 +18,7 @@ find /var/log -type f -mtime +7
 - `find`: The Linux command to search for files in a directory hierarchy.
 - `/var/log`: The target directory that contains log files.
 - `-type f`: Limits the search to files (not directories).
-- `-mtime +7`: Filters files **modified more than 7 days ago**.
+- `-mtime +7`: Filters files **modified more than 7 days ago**. -mtime stands for modification time
   - `+7` means strictly older than 7 days.
   - `-7` would mean newer than 7 days.
 
