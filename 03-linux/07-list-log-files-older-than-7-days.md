@@ -10,6 +10,7 @@ You can use the `find` command with the `-mtime` option to locate files older th
 ```bash
 find /var/log -type f -mtime +7
 find /var/log -type f -mtime +7 -name *.log
+find /var/log -type f -mtime +7 -name *.log -exec ls -ltr {} \;
 ```
 
 ### 📘 Detailed Explanation  
